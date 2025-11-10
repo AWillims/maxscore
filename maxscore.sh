@@ -26,5 +26,5 @@ echo "The highest score is $max"
 echo "The scores are: ${score_list[*]}"
 for score in "${score_list[@]}"; do
     diff=$((max - score))
-    echo "Score: $score, Difference: $diff"
+    echo "$score differs from the max by $diff"
 done
