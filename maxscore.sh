@@ -23,7 +23,7 @@ while true; do
 done
 
 echo "The highest score is $max"
-echo "The scores are: ${score_list[@]}"
+echo "The scores are: ${score_list[*]}"
 for score in "${score_list[@]}"; do
     diff=$((max - score))
     echo "Score: $score, Difference: $diff"
